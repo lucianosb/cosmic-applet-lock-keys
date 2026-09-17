@@ -17,8 +17,8 @@ build-release:
     cargo build --release
 
 install: build-release
-    install -Dm0755 {{bin-src}} {{bin-dst}}
-    install -Dm0644 {{desktop-src}} {{desktop-dst}}
+    sudo install -Dm0755 {{bin-src}} {{bin-dst}}
+    sudo install -Dm0644 {{desktop-src}} {{desktop-dst}}
 
 uninstall:
-    rm -f {{bin-dst}} {{desktop-dst}}
+    sudo rm -f {{bin-dst}} {{desktop-dst}}
