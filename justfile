@@ -18,6 +18,9 @@ default: build-release
 build-release:
     cargo build --release
 
+test:
+    cargo test
+
 install: build-release
     sudo install -Dm0755 {{bin-src}} {{bin-dst}}
     sudo install -Dm0644 {{desktop-src}} {{desktop-dst}}
