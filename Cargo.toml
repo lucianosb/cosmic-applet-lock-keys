@@ -2,7 +2,7 @@
 name = "cosmic-applet-lock-keys"
 version = "0.1.0"
 edition = "2021"
-license = "GPL-3.0-only"
+license = "MIT"
 description = "COSMIC panel applet that indicates Num Lock and Caps Lock state"
 
 [dependencies]

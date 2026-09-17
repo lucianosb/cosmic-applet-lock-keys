@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: MIT
 
 //! Reads Num Lock / Caps Lock indicator state from the kernel LED sysfs
 //! interface (`/sys/class/leds/*::{capslock,numlock}/brightness`). This
