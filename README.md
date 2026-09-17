@@ -5,6 +5,9 @@ shows two icons in the top toolbar — one for **Caps Lock** and one for
 **Num Lock**. Each icon is dimmed when its key is inactive and becomes fully
 opaque when the key is toggled on.
 
+<img width="248" height="86" alt="image" src="https://github.com/user-attachments/assets/753767f4-8c95-4879-85af-9eae4ddc0f64" />
+
+
 State is read from the kernel LED sysfs interface
 (`/sys/class/leds/*::capslock` / `*::numlock`), which reflects the keyboard
 LED state maintained by the input subsystem, so it works under Wayland
