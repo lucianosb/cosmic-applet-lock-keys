@@ -4,6 +4,9 @@ version = "0.1.0"
 edition = "2021"
 license = "MIT"
 description = "COSMIC panel applet that indicates Num Lock and Caps Lock state"
+homepage = "https://github.com/lucianosb/cosmic-applet-lock-keys"
+repository = "https://github.com/lucianosb/cosmic-applet-lock-keys"
+readme = "README.md"
 
 [dependencies]
 libcosmic = { git = "https://github.com/pop-os/libcosmic", default-features = false, features = [

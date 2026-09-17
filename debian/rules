@@ -1,0 +1,24 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	cargo build --release
+
+override_dh_auto_install:
+	install -D -m 0755 target/release/cosmic-applet-lock-keys \
+		debian/cosmic-applet-lock-keys/usr/bin/cosmic-applet-lock-keys
+	install -D -m 0644 data/com.lucianosb.CosmicAppletLockKeys.desktop \
+		debian/cosmic-applet-lock-keys/usr/share/applications/com.lucianosb.CosmicAppletLockKeys.desktop
+	install -D -m 0644 data/com.lucianosb.CosmicAppletLockKeys.metainfo.xml \
+		debian/cosmic-applet-lock-keys/usr/share/metainfo/com.lucianosb.CosmicAppletLockKeys.metainfo.xml
+	install -D -m 0644 data/icons/caps-lock-symbolic.svg \
+		debian/cosmic-applet-lock-keys/usr/share/icons/hicolor/scalable/status/caps-lock-symbolic.svg
+	install -D -m 0644 data/icons/num-lock-symbolic.svg \
+		debian/cosmic-applet-lock-keys/usr/share/icons/hicolor/scalable/status/num-lock-symbolic.svg
+	install -D -m 0644 LICENSE \
+		debian/cosmic-applet-lock-keys/usr/share/doc/cosmic-applet-lock-keys/copyright
+
+override_dh_auto_clean:
+	cargo clean

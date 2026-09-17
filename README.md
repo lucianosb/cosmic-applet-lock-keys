@@ -35,3 +35,7 @@ via COSMIC Settings > Panel > Applets.
 ```sh
 just uninstall
 ```
+
+## AI Disclaimer
+
+Most of the code was written with the assistance of Github Copilot.

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.lucianosb.CosmicAppletLockKeys</id>
+  <name>Lock Keys</name>
+  <summary>COSMIC panel applet showing Caps Lock and Num Lock state</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <developer id="com.lucianosb">
+    <name>Luciano Santa Brigida</name>
+  </developer>
+  <url type="homepage">https://github.com/lucianosb/cosmic-applet-lock-keys</url>
+  <url type="bugtracker">https://github.com/lucianosb/cosmic-applet-lock-keys/issues</url>
+  <launchable type="desktop-id">com.lucianosb.CosmicAppletLockKeys.desktop</launchable>
+  <icon type="stock">input-keyboard-symbolic</icon>
+  <categories>
+    <category>Utility</category>
+  </categories>
+  <keywords>
+    <keyword>Caps Lock</keyword>
+    <keyword>Num Lock</keyword>
+    <keyword>keyboard</keyword>
+    <keyword>applet</keyword>
+  </keywords>
+  <description>
+    <p>Shows the current Caps Lock and Num Lock state in the COSMIC desktop panel, making keyboard lock status visible at a glance.</p>
+    <p>Indicators are dimmed when inactive and fully opaque when active.</p>
+  </description>
+  <provides>
+    <binary>cosmic-applet-lock-keys</binary>
+  </provides>
+  <content_rating type="oars-1.1" />
+</component>

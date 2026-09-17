@@ -1,0 +1,14 @@
+Source: cosmic-applet-lock-keys
+Section: utils
+Priority: optional
+Maintainer: Luciano Santa Brigida <luciano@lucianosb.com>
+Build-Depends: debhelper-compat (= 13), cargo, rustc
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+
+Package: cosmic-applet-lock-keys
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: COSMIC panel applet for Caps Lock and Num Lock
+ A COSMIC panel applet that shows the current Caps Lock and Num Lock state.
+ The indicators are dimmed when inactive and fully opaque when active.

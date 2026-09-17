@@ -3,12 +3,10 @@
 use std::time::Duration;
 
 use cosmic::{
-    Element, Task, app,
-    iced::{
-        Alignment, Length, Subscription,
-        widget::Row,
-    },
+    app,
+    iced::{widget::Row, Alignment, Length, Subscription},
     widget::icon,
+    Element, Task,
 };
 
 use crate::lock_state;
@@ -86,7 +84,11 @@ impl cosmic::Application for LockKeysApplet {
             .symbolic(true)
             .icon()
             .size(icon_size)
-            .opacity(if self.caps_lock { 1.0 } else { INACTIVE_OPACITY })
+            .opacity(if self.caps_lock {
+                1.0
+            } else {
+                INACTIVE_OPACITY
+            })
             .into();
 
         let num_icon: Element<_> = icon::from_svg_bytes(NUM_LOCK_SVG)
