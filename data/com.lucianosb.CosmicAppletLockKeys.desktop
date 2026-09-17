@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Lock Keys
+Comment=Indicates Num Lock and Caps Lock state
+Type=Application
+Exec=cosmic-applet-lock-keys
+Terminal=false
+Categories=COSMIC;
+Keywords=COSMIC;Applet;NumLock;CapsLock;
+Icon=input-keyboard-symbolic
+StartupNotify=true
+NoDisplay=true
+X-CosmicApplet=true

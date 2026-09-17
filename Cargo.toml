@@ -1,0 +1,20 @@
+[package]
+name = "cosmic-applet-lock-keys"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-only"
+description = "COSMIC panel applet that indicates Num Lock and Caps Lock state"
+
+[dependencies]
+libcosmic = { git = "https://github.com/pop-os/libcosmic", default-features = false, features = [
+    "applet",
+    "wayland",
+    "tokio",
+] }
+tokio = { version = "1", features = ["rt", "rt-multi-thread", "macros", "time", "sync"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
